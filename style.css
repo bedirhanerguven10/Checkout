@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
 header{
     text-align: center;
     font-size: 2.5rem;
@@ -14,7 +19,7 @@ main{
     align-items: center;
 }
 .cart{
-    width: 340px;
+    width: 400px;
     background-color: #EEE;
     display: flex;
     flex-direction: column;
@@ -34,7 +39,9 @@ main{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    
 }
+
 .top{
     display: flex;
     flex-direction: column;
@@ -51,8 +58,30 @@ main{
 }
 .item p:nth-child(2) span{
     color: black;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
+.item p {
+    padding-top: .1rem;
+}
+
+.remove {
+    display: inline-block;
+    text-align: center;
+    margin-left: 28px;
+    margin-top: 5px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.remove:hover {
+    background-color: rgba(0, 0, 0, .1);
+    transition: .5s ease;
+}
+
 .counter{
     display: flex;
     gap: 12px;
@@ -80,6 +109,7 @@ form{
     width: 340px;
     margin-top: 25px;
 }
+
 label{
     margin: 10px 0;
     display: inline-block;
@@ -89,6 +119,7 @@ label{
     padding: 4px 10px;
     border-radius: 4px;
 }
+
 .shipping-address{
     margin-top: 25px;
 }
@@ -97,9 +128,11 @@ label{
     border: none;
     outline: none;
 }
+
 .country{
     width: max-content;
 }
+
 button{
     border: none;
     padding: 15px 20px;
@@ -107,30 +140,37 @@ button{
     color: white;
     border-radius: 5px;
 }
+
 .submit{
     text-align: center;
     position: relative;
 }
+
+
 @media (min-width: 750px){
     main{
         flex-direction: row-reverse;
         align-items: flex-start;
         gap: 25px;
     }
+
     button{
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(50%, -20%);
+        transform: translateY(-20%);
     }
+
     .double{
         display: flex;
         gap: 10px;
     }
+
     .double input:nth-child(2){
         width: 155px;
         padding-left: 5px;
     }
+
     .input input, select{
         margin-left: 5px;
     }
