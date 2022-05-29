@@ -1,5 +1,5 @@
 
-[Click here to reach my Checkout Project](https://bedirhanerguven10.github.io/Checkout/)<br>
+[##Click here to reach my Checkout Project](https://bedirhanerguven10.github.io/Checkout/)<br>
 ### In this project,<br>
 * A shopping site checkout form was created,
 * Responsive design was created by using the flexbox layout feature in the project, 
